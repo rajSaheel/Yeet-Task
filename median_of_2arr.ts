@@ -19,10 +19,8 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
         arr=arr.concat(nums2.slice(index2));
     }
     const len:number=arr.length;
-    
     if(len%2==0){
         return ((arr[(len/2)-1]+arr[len/2])/2);
-    }else{
-        return arr[((len-1)/2)];
     }
+    return arr[((len-1)/2)];
 };
