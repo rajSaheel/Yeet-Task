@@ -1,9 +1,7 @@
 function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
-    
     let index1:number=0;
     let index2:number=0;
     let arr:number[]=[];
-    
     while(index1<nums1.length&&index2<nums2.length){
         if(nums1[index1]<nums2[index2]){
             arr.push(nums1[index1]);
@@ -20,7 +18,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
     else{
         arr=arr.concat(nums2.slice(index2));
     }
-
     const len:number=arr.length;
     
     if(len%2==0){
